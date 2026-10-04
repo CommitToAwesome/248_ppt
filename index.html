@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DDIL Trainer — Presentation</title>
+    <title>DDIL Trainer — Presentation (India)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module">
         import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
@@ -31,7 +31,6 @@
             font-size: 0.7rem; color: #334155; border-top: 1px solid #1e293b; padding-top: 0.75rem;
         }
 
-        /* Slide backgrounds */
         .bg-1 { background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%); }
         .bg-2 { background: linear-gradient(135deg, #0f172a 0%, #042f2e 50%, #0f172a 100%); }
         .bg-3 { background: linear-gradient(135deg, #0f172a 0%, #1c1917 50%, #0f172a 100%); }
@@ -43,12 +42,13 @@
         .tag-green { background: rgba(34,197,94,0.15); color: #4ade80; border: 1px solid rgba(34,197,94,0.3); }
         .tag-amber { background: rgba(245,158,11,0.15); color: #fbbf24; border: 1px solid rgba(245,158,11,0.3); }
         .tag-rose { background: rgba(244,63,94,0.15); color: #fb7185; border: 1px solid rgba(244,63,94,0.3); }
+        .tag-orange { background: rgba(249,115,22,0.15); color: #fb923c; border: 1px solid rgba(249,115,22,0.3); }
 
         .metric-card {
             background: rgba(30, 41, 59, 0.5); border: 1px solid rgba(255,255,255,0.08);
             border-radius: 12px; padding: 1.25rem; text-align: center;
         }
-        .metric-val { font-size: 2rem; font-weight: 800; line-height: 1; }
+        .metric-val { font-size: 1.8rem; font-weight: 800; line-height: 1; }
         .metric-label { font-size: 0.7rem; color: #94a3b8; margin-top: 0.4rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
 
         .icon-box {
@@ -79,14 +79,15 @@
 <div class="slide bg-1" id="slide1">
     <div class="slide-num">01 / 05</div>
     
-    <div style="margin-top: 1rem;">
+    <div style="margin-top: 1rem; display:flex; gap:0.5rem;">
+        <span class="tag tag-orange">Atmanirbhar Bharat</span>
         <span class="tag tag-blue">Problem → Solution</span>
     </div>
     
     <h1 class="slide-title mt-4" style="margin-top:1rem;">
         <span style="color:#60a5fa;">DDIL</span> Multi-Domain<br>Decision-Making Trainer
     </h1>
-    <p class="subtitle" style="max-width:700px;">Training military commanders to lead when communication networks are jammed, hacked, or destroyed — not how to fix them, but how to fight without them.</p>
+    <p class="subtitle" style="max-width:700px;">Training Indian Armed Forces commanders to lead when communication networks are jammed, hacked, or destroyed along the LAC and LoC — not how to fix them, but how to fight without them.</p>
 
     <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2rem;">
         <!-- Problem column -->
@@ -96,22 +97,22 @@
                 <div style="display:flex; gap:0.75rem; align-items:flex-start;">
                     <div class="icon-box" style="background:rgba(239,68,68,0.1); border:1px solid rgba(239,68,68,0.2);">🔇</div>
                     <div>
-                        <div style="font-weight:600; font-size:0.85rem;">Training Assumes Clean Comms</div>
-                        <div style="font-size:0.72rem; color:#94a3b8;">Exercises assume GPS works, radios connect, and data flows perfectly</div>
+                        <div style="font-weight:600; font-size:0.85rem;">Legacy AREN is Obsolete</div>
+                        <div style="font-size:0.72rem; color:#94a3b8;">Current tactical comms (AREN) cannot meet the data-heavy, secure, real-time demands of modern warfare</div>
                     </div>
                 </div>
                 <div style="display:flex; gap:0.75rem; align-items:flex-start;">
                     <div class="icon-box" style="background:rgba(239,68,68,0.1); border:1px solid rgba(239,68,68,0.2);">📡</div>
                     <div>
-                        <div style="font-weight:600; font-size:0.85rem;">Reality: Networks Fail First</div>
-                        <div style="font-size:0.72rem; color:#94a3b8;">Near-peer adversaries jam GPS, block radios, and spoof intel feeds</div>
+                        <div style="font-weight:600; font-size:0.85rem;">Adversaries on LAC & LoC</div>
+                        <div style="font-size:0.72rem; color:#94a3b8;">Near-peer adversaries deploy GPS jamming, RF spectrum denial, and intel feed spoofing at the borders</div>
                     </div>
                 </div>
                 <div style="display:flex; gap:0.75rem; align-items:flex-start;">
                     <div class="icon-box" style="background:rgba(239,68,68,0.1); border:1px solid rgba(239,68,68,0.2);">🧠</div>
                     <div>
-                        <div style="font-weight:600; font-size:0.85rem;">Commanders Freeze</div>
-                        <div style="font-size:0.72rem; color:#94a3b8;">Without training, leaders hesitate waiting for a connection that won't return</div>
+                        <div style="font-weight:600; font-size:0.85rem;">No EW Training Environment</div>
+                        <div style="font-size:0.72rem; color:#94a3b8;">EW training requires Emission-Free zones near sensitive borders — simulator-based training is the only scalable path</div>
                     </div>
                 </div>
             </div>
@@ -125,28 +126,28 @@
                     <div class="icon-box" style="background:rgba(34,197,94,0.1); border:1px solid rgba(34,197,94,0.2);">🎮</div>
                     <div>
                         <div style="font-weight:600; font-size:0.85rem;">Immersive Multiplayer Simulator</div>
-                        <div style="font-size:0.72rem; color:#94a3b8;">UE5-powered multi-domain scenario engine (Land, Air, Cyber, EW)</div>
+                        <div style="font-size:0.72rem; color:#94a3b8;">UE5-powered multi-domain scenario engine covering Land, Air, Cyber, and EW domains</div>
                     </div>
                 </div>
                 <div style="display:flex; gap:0.75rem; align-items:flex-start;">
                     <div class="icon-box" style="background:rgba(34,197,94,0.1); border:1px solid rgba(34,197,94,0.2);">⚡</div>
                     <div>
                         <div style="font-weight:600; font-size:0.85rem;">Real-Time Chaos Injection</div>
-                        <div style="font-size:0.72rem; color:#94a3b8;">Instructor triggers jamming, spoofing, and blackouts mid-exercise</div>
+                        <div style="font-size:0.72rem; color:#94a3b8;">Instructor triggers jamming, spoofing, and blackouts mid-exercise — replicates Dharashakti-class EW threats</div>
                     </div>
                 </div>
                 <div style="display:flex; gap:0.75rem; align-items:flex-start;">
                     <div class="icon-box" style="background:rgba(34,197,94,0.1); border:1px solid rgba(34,197,94,0.2);">🤖</div>
                     <div>
                         <div style="font-weight:600; font-size:0.85rem;">AI Automation Bias Testing</div>
-                        <div style="font-size:0.72rem; color:#94a3b8;">AI companion deliberately fed bad data — tests if human overrides or blindly trusts</div>
+                        <div style="font-size:0.72rem; color:#94a3b8;">AI companion deliberately fed bad data — tests if the commander overrides or blindly trusts corrupted intel</div>
                     </div>
                 </div>
                 <div style="display:flex; gap:0.75rem; align-items:flex-start;">
                     <div class="icon-box" style="background:rgba(34,197,94,0.1); border:1px solid rgba(34,197,94,0.2);">📋</div>
                     <div>
                         <div style="font-weight:600; font-size:0.85rem;">Cognitive DNA Debrief</div>
-                        <div style="font-size:0.72rem; color:#94a3b8;">AAR engine produces clinical-style diagnosis of decision-making flaws</div>
+                        <div style="font-size:0.72rem; color:#94a3b8;">AAR engine produces clinical-style diagnosis of decision-making flaws under DDIL stress</div>
                     </div>
                 </div>
             </div>
@@ -154,7 +155,7 @@
     </div>
     
     <div class="slide-footer">
-        <span>DDIL Multi-Domain Trainer</span>
+        <span>DDIL Multi-Domain Trainer — For Indian Armed Forces</span>
         <span>Confidential</span>
     </div>
 </div>
@@ -170,9 +171,8 @@
     <h2 class="section-title" style="margin-top:0.75rem; margin-bottom:1rem;">System Architecture & Application Workflow</h2>
 
     <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
-        <!-- Left: Architecture diagram -->
         <div style="background:rgba(15,23,42,0.8); border:1px solid rgba(255,255,255,0.06); border-radius:12px; padding:1rem;">
-            <div style="font-size:0.65rem; font-weight:700; color:#475569; text-transform:uppercase; letter-spacing:0.1em; text-align:center; margin-bottom:0.5rem;">Corrected Architecture — Server-Side Degradation</div>
+            <div style="font-size:0.65rem; font-weight:700; color:#475569; text-transform:uppercase; letter-spacing:0.1em; text-align:center; margin-bottom:0.5rem;">Server-Side Degradation Architecture</div>
             <pre class="mermaid" style="font-size:0.7rem;">
 graph TD
     A["🎓 Instructor\nDashboard"] -->|WSS| B["Instructor API"]
@@ -189,7 +189,6 @@ graph TD
             </pre>
         </div>
         
-        <!-- Right: Key decisions -->
         <div style="display:flex; flex-direction:column; gap:0.75rem;">
             <div style="font-size:0.65rem; font-weight:700; color:#475569; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.25rem;">Key Architecture Decisions</div>
             
@@ -203,16 +202,15 @@ graph TD
             </div>
             <div class="pillar-card">
                 <div style="font-weight:700; font-size:0.85rem; color:#fbbf24;">Dual World State</div>
-                <div style="font-size:0.7rem; color:#94a3b8; margin-top:0.3rem;">Server maintains Ground Truth + per-player Degraded View. Both logged to InfluxDB at 10Hz for AAR Reality Delta analysis.</div>
+                <div style="font-size:0.7rem; color:#94a3b8; margin-top:0.3rem;">Server maintains Ground Truth + per-player Degraded View. Both logged at 10Hz for AAR Reality Delta analysis.</div>
             </div>
             <div class="pillar-card">
                 <div style="font-weight:700; font-size:0.85rem; color:#f87171;">RF Physics Engine</div>
-                <div style="font-size:0.7rem; color:#94a3b8; margin-top:0.3rem;">FSPL + Fresnel zone raycasting over DEM terrain. Computes per-player SINR every server tick to drive voice and data degradation.</div>
+                <div style="font-size:0.7rem; color:#94a3b8; margin-top:0.3rem;">FSPL + Fresnel zone raycasting over ISRO CartoDEM / SRTM terrain. Computes per-player SINR every server tick.</div>
             </div>
         </div>
     </div>
 
-    <!-- Bottom: Tech stack pills -->
     <div style="display:flex; gap:0.5rem; margin-top:1.25rem; flex-wrap:wrap;">
         <span class="tag tag-blue">Unreal Engine 5</span>
         <span class="tag tag-green">LiveKit SFU</span>
@@ -221,11 +219,11 @@ graph TD
         <span class="tag tag-blue">Web Audio API</span>
         <span class="tag tag-green">PostgreSQL</span>
         <span class="tag tag-amber">React + Node.js</span>
-        <span class="tag tag-rose">Python FastAPI</span>
+        <span class="tag tag-orange">ISRO CartoDEM</span>
     </div>
     
     <div class="slide-footer">
-        <span>DDIL Multi-Domain Trainer</span>
+        <span>DDIL Multi-Domain Trainer — For Indian Armed Forces</span>
         <span>Confidential</span>
     </div>
 </div>
@@ -258,8 +256,8 @@ graph TD
                     <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.2rem;">Server-side replication is UE5's core design pattern — we work with the engine, not against it</div>
                 </div>
                 <div class="pillar-card">
-                    <div style="font-weight:600; font-size:0.8rem;">All Components: COTS</div>
-                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.2rem;">Every technology (UE5, LiveKit, Redis, InfluxDB) is production-proven and open-source or free-tier</div>
+                    <div style="font-weight:600; font-size:0.8rem;">Indian DEM Available</div>
+                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.2rem;">ISRO CartoDEM (30m) covers India nationally. SRTM provides global fallback. Both free.</div>
                 </div>
             </div>
         </div>
@@ -269,20 +267,20 @@ graph TD
             <div style="font-size:0.7rem; font-weight:700; color:#fbbf24; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.75rem;">⚠ Challenges & Risks</div>
             <div style="display:flex; flex-direction:column; gap:0.6rem;">
                 <div class="pillar-card" style="border-left:2px solid #f59e0b;">
-                    <div style="font-weight:600; font-size:0.8rem;">DEM Terrain Data</div>
-                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.2rem;">Real LOS raycasting requires high-resolution Digital Elevation Model data (SRTM / GeoTIFF)</div>
+                    <div style="font-weight:600; font-size:0.8rem;">Defense Procurement Cycle</div>
+                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.2rem;">DAP 2020 process (AoN → RFP → Trials → Contract) can take 2-4 years end-to-end</div>
                 </div>
                 <div class="pillar-card" style="border-left:2px solid #f59e0b;">
                     <div style="font-weight:600; font-size:0.8rem;">Server Tick Budget</div>
                     <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.2rem;">RF link budget for every player pair every tick — O(n²) scaling needs optimization</div>
                 </div>
                 <div class="pillar-card" style="border-left:2px solid #f59e0b;">
-                    <div style="font-weight:600; font-size:0.8rem;">Military Accreditation</div>
-                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.2rem;">Defense procurement requires security clearances, ITAR compliance, IL4+ hosting</div>
+                    <div style="font-weight:600; font-size:0.8rem;">Classified Terrain Data</div>
+                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.2rem;">High-res DEM for LAC/LoC border areas may require NRSC/MoD clearance beyond 30m resolution</div>
                 </div>
                 <div class="pillar-card" style="border-left:2px solid #f59e0b;">
                     <div style="font-weight:600; font-size:0.8rem;">AI Bias Calibration</div>
-                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.2rem;">LLM companion must be carefully tuned to give plausibly wrong advice, not obviously wrong</div>
+                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.2rem;">LLM companion must give plausibly wrong advice, not obviously wrong — careful prompt engineering needed</div>
                 </div>
             </div>
         </div>
@@ -292,27 +290,27 @@ graph TD
             <div style="font-size:0.7rem; font-weight:700; color:#60a5fa; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.75rem;">🛡 Mitigation Strategies</div>
             <div style="display:flex; flex-direction:column; gap:0.6rem;">
                 <div class="pillar-card" style="border-left:2px solid #3b82f6;">
-                    <div style="font-weight:600; font-size:0.8rem;">Use NASA SRTM (Free)</div>
-                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.2rem;">30m resolution, global coverage, freely available — sufficient for training scenarios</div>
+                    <div style="font-weight:600; font-size:0.8rem;">DAP Make-II / iDEX Route</div>
+                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.2rem;">Industry-funded prototype (Make-II) with guaranteed procurement order on success. iDEX grants for initial R&D.</div>
                 </div>
                 <div class="pillar-card" style="border-left:2px solid #3b82f6;">
                     <div style="font-weight:600; font-size:0.8rem;">Spatial Partitioning</div>
                     <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.2rem;">Only compute RF for players within max radio range — grid-based culling reduces to O(n)</div>
                 </div>
                 <div class="pillar-card" style="border-left:2px solid #3b82f6;">
-                    <div style="font-weight:600; font-size:0.8rem;">Start with NATO Partners</div>
-                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.2rem;">Target allied nations with simpler procurement first (UK DSTL, AUS DST Group)</div>
+                    <div style="font-weight:600; font-size:0.8rem;">Start with Synthetic Terrain</div>
+                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.2rem;">Use freely available 30m DEM for generic scenarios first. Seek NRSC clearance for border-specific maps separately.</div>
                 </div>
                 <div class="pillar-card" style="border-left:2px solid #3b82f6;">
                     <div style="font-weight:600; font-size:0.8rem;">Prompt Engineering + Guardrails</div>
-                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.2rem;">LLM receives degraded data via prompt — produces naturally wrong output without custom training</div>
+                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.2rem;">LLM receives degraded sensor data via prompt — produces naturally wrong output without custom model training</div>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="slide-footer">
-        <span>DDIL Multi-Domain Trainer</span>
+        <span>DDIL Multi-Domain Trainer — For Indian Armed Forces</span>
         <span>Confidential</span>
     </div>
 </div>
@@ -330,16 +328,16 @@ graph TD
     <!-- Metrics row -->
     <div style="display:grid; grid-template-columns: repeat(4, 1fr); gap:1rem; margin-bottom:1.75rem;">
         <div class="metric-card">
-            <div class="metric-val" style="color:#f87171;">83%</div>
-            <div class="metric-label">of EW engagements<br>cause decision paralysis</div>
+            <div class="metric-val" style="color:#f87171;">₹6.81L Cr</div>
+            <div class="metric-label">India defense budget<br>FY 2025-26</div>
         </div>
         <div class="metric-card">
-            <div class="metric-val" style="color:#60a5fa;">$13.6B</div>
-            <div class="metric-label">Global military<br>simulation market (2028)</div>
+            <div class="metric-val" style="color:#60a5fa;">₹1,000Cr+</div>
+            <div class="metric-label">Annual savings from<br>simulator training (TERI)</div>
         </div>
         <div class="metric-card">
-            <div class="metric-val" style="color:#4ade80;">10×</div>
-            <div class="metric-label">Cheaper than live<br>EW field exercises</div>
+            <div class="metric-val" style="color:#4ade80;">₹5,150Cr</div>
+            <div class="metric-label">Dharashakti EW system<br>project approved 2025</div>
         </div>
         <div class="metric-card">
             <div class="metric-val" style="color:#fbbf24;">24/7</div>
@@ -354,16 +352,16 @@ graph TD
             <div style="font-size:0.7rem; font-weight:700; color:#a78bfa; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.75rem;">🌍 Social Impact</div>
             <div style="display:flex; flex-direction:column; gap:0.6rem;">
                 <div style="font-size:0.78rem;">
-                    <div style="font-weight:600;">Saves Lives in Combat</div>
-                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.15rem;">Commanders trained under degraded conditions make faster, better decisions when real comms fail</div>
+                    <div style="font-weight:600;">Saves Lives at the Border</div>
+                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.15rem;">Commanders trained under degraded conditions make faster decisions when comms fail on the LAC/LoC</div>
                 </div>
                 <div style="font-size:0.78rem;">
                     <div style="font-weight:600;">Builds Human-AI Trust Safely</div>
-                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.15rem;">Tests automation bias in a safe environment before lives depend on it</div>
+                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.15rem;">Tests automation bias in a safe environment before lives depend on it in Theatre Commands</div>
                 </div>
                 <div style="font-size:0.78rem;">
-                    <div style="font-weight:600;">Democratizes EW Training</div>
-                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.15rem;">Smaller nations and reserve forces gain access to training previously only available to major powers</div>
+                    <div style="font-weight:600;">Scales to All Three Services</div>
+                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.15rem;">Army, Navy, and Air Force all need DDIL training — one platform serves all with scenario packs</div>
                 </div>
             </div>
         </div>
@@ -373,16 +371,16 @@ graph TD
             <div style="font-size:0.7rem; font-weight:700; color:#4ade80; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.75rem;">💰 Economic Impact</div>
             <div style="display:flex; flex-direction:column; gap:0.6rem;">
                 <div style="font-size:0.78rem;">
-                    <div style="font-weight:600;">Eliminates Spectrum Costs</div>
-                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.15rem;">No need to reserve RF spectrum bands or deploy real EW hardware for training</div>
+                    <div style="font-weight:600;">Eliminates Spectrum & Fuel Costs</div>
+                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.15rem;">No real RF spectrum needed. No fuel, ammo, or equipment wear. TERI estimates ₹1,000+ Cr annual savings at 40% sim penetration.</div>
                 </div>
                 <div style="font-size:0.78rem;">
-                    <div style="font-weight:600;">Reduces Field Exercise Cost</div>
-                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.15rem;">A single live EW exercise costs \$2-5M+ in fuel, personnel, and equipment. This runs on laptops.</div>
+                    <div style="font-weight:600;">Buy Indian-IDDM Eligible</div>
+                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.15rem;">100% indigenous design — qualifies for DAP 2020's highest-priority procurement category</div>
                 </div>
                 <div style="font-size:0.78rem;">
-                    <div style="font-weight:600;">SaaS Revenue Model</div>
-                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.15rem;">Per-seat licensing for defense academies, war colleges, and allied nations</div>
+                    <div style="font-weight:600;">iDEX / Make-II Fundable</div>
+                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.15rem;">Prototype development through Make-II (industry funded, guaranteed order) or iDEX grant for startups</div>
                 </div>
             </div>
         </div>
@@ -393,22 +391,22 @@ graph TD
             <div style="display:flex; flex-direction:column; gap:0.6rem;">
                 <div style="font-size:0.78rem;">
                     <div style="font-weight:600;">Measurable Cognitive Readiness</div>
-                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.15rem;">AAR engine quantifies decision latency, information fixation, and automation bias with millisecond precision</div>
+                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.15rem;">AAR engine quantifies decision latency, information fixation, and automation bias — track improvement across cohorts</div>
                 </div>
                 <div style="font-size:0.78rem;">
                     <div style="font-weight:600;">Repeatable & Standardized</div>
-                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.15rem;">Same scenario runs identically for benchmarking across cohorts and units</div>
+                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.15rem;">Same scenario runs identically across Army War College (Mhow), WARDEC (New Delhi), and all regional training centres</div>
                 </div>
                 <div style="font-size:0.78rem;">
-                    <div style="font-weight:600;">Scales Globally</div>
-                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.15rem;">Cloud-deployed Docker microservices — spin up new sessions for any unit, anywhere</div>
+                    <div style="font-weight:600;">No Emission-Free Zone Needed</div>
+                    <div style="font-size:0.68rem; color:#94a3b8; margin-top:0.15rem;">Real EW training requires scarce EEF zones near borders. This runs on standard laptops anywhere in India.</div>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="slide-footer">
-        <span>DDIL Multi-Domain Trainer</span>
+        <span>DDIL Multi-Domain Trainer — For Indian Armed Forces</span>
         <span>Confidential</span>
     </div>
 </div>
@@ -424,45 +422,45 @@ graph TD
     <h2 class="section-title" style="margin-top:0.75rem; margin-bottom:1.25rem;">Research Foundation & References</h2>
 
     <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
-        <!-- Left: RF & Physics references -->
+        <!-- Left column -->
         <div>
             <div style="font-size:0.7rem; font-weight:700; color:#60a5fa; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.75rem;">📡 RF Physics & Propagation</div>
-            <div class="ref-item"><span>[1]</span> ITU-R P.525-4 — "Calculation of free-space attenuation" — FSPL equation with constant 32.44 (d in km, f in MHz)</div>
-            <div class="ref-item"><span>[2]</span> ITU-R P.530 Series — Fresnel zone calculations for terrestrial LoS links: r = 17.32 × √(d₁d₂ / f(d₁+d₂))</div>
-            <div class="ref-item"><span>[3]</span> Rappaport, T.S. — "Wireless Communications: Principles and Practice" — Standard link budget equations and propagation models</div>
-            <div class="ref-item"><span>[4]</span> Manning, T. — "Microwave Radio Transmission Design Guide" — Fresnel zone clearance and knife-edge diffraction</div>
-            <div class="ref-item"><span>[5]</span> RF Essentials — Knife-Edge Diffraction Path Loss and Jammer Burn-Through equations</div>
+            <div class="ref-item"><span>[1]</span> ITU-R P.525-4 — "Calculation of free-space attenuation" — FSPL constant 32.44 (d in km, f in MHz)</div>
+            <div class="ref-item"><span>[2]</span> ITU-R P.530 Series — Fresnel zone calculations: r = 17.32 × √(d₁d₂ / f(d₁+d₂))</div>
+            <div class="ref-item"><span>[3]</span> Rappaport, T.S. — "Wireless Communications: Principles and Practice" — Link budget & propagation models</div>
 
-            <div style="font-size:0.7rem; font-weight:700; color:#fbbf24; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.75rem; margin-top:1.25rem;">🔒 Military Communications</div>
-            <div class="ref-item"><span>[6]</span> NATO JADC2 Initiative — Joint All-Domain Command & Control communications resilience requirements</div>
-            <div class="ref-item"><span>[7]</span> US DoD DDIL Strategy — Denied, Degraded, Intermittent, Limited bandwidth operational doctrine</div>
-            <div class="ref-item"><span>[8]</span> SINCGARS / HAVE-QUICK — Frequency-hopping spread spectrum tactical radio waveforms</div>
-            <div class="ref-item"><span>[9]</span> MADL (F-35) — Multifunction Advanced Data Link, narrow-beam LPI/LPD stealth data link</div>
+            <div style="font-size:0.7rem; font-weight:700; color:#fb923c; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.75rem; margin-top:1.25rem;">🇮🇳 Indian Defense & Comms</div>
+            <div class="ref-item"><span>[4]</span> AREN / TCS — Army Radio Engineering Network (legacy) → Tactical Communication System (replacement program)</div>
+            <div class="ref-item"><span>[5]</span> BEL SDR-Tac — Bharat Electronics Ltd indigenous Software Defined Radios with MANET & FHSS capabilities</div>
+            <div class="ref-item"><span>[6]</span> Samyukta / Dharashakti — DRDO indigenous Electronic Warfare systems (₹5,150 Cr project, 2025)</div>
+            <div class="ref-item"><span>[7]</span> DAP 2020 — Defence Acquisition Procedure: Buy Indian-IDDM, Make-I, Make-II procurement categories</div>
+            <div class="ref-item"><span>[8]</span> iDEX — Innovations for Defence Excellence — Startup grant program under Atmanirbhar Bharat</div>
+            <div class="ref-item"><span>[9]</span> DRDO ISSA / CAIR — Institute for Systems Studies and Analysis (wargaming) & Centre for AI and Robotics</div>
         </div>
 
-        <!-- Right: Software & Psychology -->
+        <!-- Right column -->
         <div>
             <div style="font-size:0.7rem; font-weight:700; color:#4ade80; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.75rem;">💻 Software & Architecture</div>
             <div class="ref-item"><span>[10]</span> Web Audio API — W3C Specification — AudioContext, BiquadFilterNode, AudioWorkletNode, OscillatorNode</div>
-            <div class="ref-item"><span>[11]</span> LiveKit — Open-source WebRTC SFU for scalable real-time voice/video routing</div>
-            <div class="ref-item"><span>[12]</span> Unreal Engine 5 — Authoritative server replication model (FBitWriter/FBitReader), actor replication</div>
-            <div class="ref-item"><span>[13]</span> InfluxDB — Time-series database for high-frequency sensor and event logging</div>
-            <div class="ref-item"><span>[14]</span> Redis Pub/Sub — Real-time event messaging with dual-write SETEX pattern for state recovery</div>
+            <div class="ref-item"><span>[11]</span> LiveKit — Open-source WebRTC SFU (Go/Pion) for scalable real-time voice routing</div>
+            <div class="ref-item"><span>[12]</span> Unreal Engine 5 — Authoritative server replication (FBitWriter/FBitReader), actor replication</div>
+            <div class="ref-item"><span>[13]</span> ISRO CartoDEM — 30m national DEM via Bhuvan portal (Cartosat-1 stereo imagery)</div>
+            <div class="ref-item"><span>[14]</span> NASA SRTM — 30m global DEM, void-filled Version 3, via USGS Earth Explorer</div>
 
-            <div style="font-size:0.7rem; font-weight:700; color:#a78bfa; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.75rem; margin-top:1.25rem;">🧠 Psychology & Decision Science</div>
-            <div class="ref-item"><span>[15]</span> Klein, G. — Recognition-Primed Decision (RPD) Model — Decision-making under time pressure and uncertainty</div>
-            <div class="ref-item"><span>[16]</span> Parasuraman, R. & Manzey, D. — "Complacency and Bias in Human Use of Automation" — Automation bias research</div>
-            <div class="ref-item"><span>[17]</span> PACE Communications Plan — Primary, Alternate, Contingency, Emergency comms doctrine</div>
-            <div class="ref-item"><span>[18]</span> NATO AAR Standards — After Action Review structured debrief methodology</div>
+            <div style="font-size:0.7rem; font-weight:700; color:#a78bfa; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.75rem; margin-top:1.25rem;">🧠 Psychology & Indian Context</div>
+            <div class="ref-item"><span>[15]</span> Klein, G. — Recognition-Primed Decision (RPD) Model — Decision-making under time pressure</div>
+            <div class="ref-item"><span>[16]</span> Parasuraman, R. & Manzey, D. (2010) — "Complacency and Bias in Human Use of Automation: An Attentional Integration" — Human Factors, 52(3)</div>
+            <div class="ref-item"><span>[17]</span> TERI Report (2026) — Simulator-based training can save Indian Armed Forces ₹1,000+ Cr annually</div>
+            <div class="ref-item"><span>[18]</span> WARDEC (New Delhi) / Army War College (Mhow) — AI-powered wargaming (ARTRAC + RRU + Tech Mahindra)</div>
         </div>
     </div>
 
     <div style="background:rgba(59,130,246,0.08); border:1px solid rgba(59,130,246,0.2); border-radius:8px; padding:0.75rem 1rem; margin-top:1.25rem;">
-        <div style="font-size:0.72rem; color:#94a3b8;"><strong style="color:#60a5fa;">Verification Note:</strong> All RF equations independently verified against ITU recommendations. Architecture validated against UE5 networking documentation. Web Audio API code tested against W3C specification. SINR calculations confirmed correct in linear domain.</div>
+        <div style="font-size:0.72rem; color:#94a3b8;"><strong style="color:#60a5fa;">Verification Note:</strong> All RF equations independently verified against ITU recommendations. Architecture validated against UE5 networking documentation. Web Audio API code tested against W3C specification. Market data sourced from Union Budget 2025-26, TERI, and Stratview Research.</div>
     </div>
 
     <div class="slide-footer">
-        <span>DDIL Multi-Domain Trainer</span>
+        <span>DDIL Multi-Domain Trainer — For Indian Armed Forces</span>
         <span>Confidential</span>
     </div>
 </div>
